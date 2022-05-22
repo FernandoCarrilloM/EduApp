@@ -85,7 +85,7 @@
         </a>
         <div class="collapse show" id="juegos">
           <ul class="nav">
-            <li class="nav-item{{ $activePage == 'users' ? ' active' : '' }}">
+            <li class="nav-item{{ $activePage == 'espanol' ? ' active' : '' }}">
               <a class="nav-link" href="#">
                 <i class="material-icons">content_paste</i>
                 <span class="sidebar-normal">{{ __('Español') }} </span>
@@ -111,7 +111,7 @@
         </a>
         <div class="collapse show" id="examen">
           <ul class="nav">
-            <li class="nav-item{{ $activePage == 'users' ? ' active' : '' }}">
+            <li class="nav-item{{ $activePage == 'espanol' ? ' active' : '' }}">
               <a class="nav-link" href="#">
                 <i class="material-icons">content_paste</i>
                 <span class="sidebar-normal">{{ __('Español') }} </span>

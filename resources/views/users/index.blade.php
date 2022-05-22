@@ -15,16 +15,19 @@
                     <div class="table-responsive">
                       <table class="table">
                         <thead class="text-primary">
-                          <th>ID</th>
+                          <th>Posicion</th>
                           <th>Nombre</th>
                           <th>Correo</th>
                           <th>Puntos</th>
                           <th>Ver detalles</th>
                         </thead>
                         <tbody>
+                          <?php 
+                            $index = 1;
+                          ?>
                           @foreach ($users as $user)
                             <tr>
-                              <td>{{ $user->id }}</td>
+                              <td>{{ $index }}</td>
                               <td>{{ $user->name }}</td>
                               <td>{{ $user->email }}</td>
                               <td>{{ $user->puntos }}</td>
@@ -32,6 +35,9 @@
                               <a href="{{ route('users.show', $user->id) }}" class="btn btn-info"><i class="material-icons">person</i></a>
                               </td>
                             </tr>
+                            <?php 
+                              $index++;
+                            ?>
                           @endforeach
                         </tbody>
                       </table>

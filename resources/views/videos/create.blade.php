@@ -69,7 +69,7 @@
               </div>
               <!--foto-->
               <div class="row">
-                <label for="foto" class="col-sm-2 col-form-label">Foto</label>
+                <label for="foto" class="col-sm-2 col-form-label">Video</label>
                 <div class="col-sm-7">
                   <input type="file" class="form-control" name="foto"
                     autocomplete="off" accept="image/*"> <!--Validamos que solo acepte archivos tipo imagen png,jpg,jpeg,etc-->

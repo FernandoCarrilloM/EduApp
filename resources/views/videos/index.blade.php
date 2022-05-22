@@ -12,6 +12,11 @@
             <p class="card-category text-center">Lista de videos </p>
           </div>
           <div class="card-body">
+          <div class="row">
+                <div class="col-10 text-right">
+                  <a href="{{ route('videos.create') }}" class="btn btn-sm btn-facebook">Añadir Video</a>
+                </div>
+              </div>
             <div class="table-responsive">
               <table class="table ">
                 <thead class="text-primary">

@@ -21,6 +21,11 @@
             <p class="card-category text-center">Lista de cuentos </p>
           </div>
           <div class="card-body">
+            <div class="row">
+                <div class="col-10 text-right">
+                  <a href="{{ route('cuentos.create') }}" class="btn btn-sm btn-facebook">Añadir cuento</a>
+                </div>
+              </div>
             <div class="table-responsive">
               <table class="table ">
                 <thead class="text-primary">

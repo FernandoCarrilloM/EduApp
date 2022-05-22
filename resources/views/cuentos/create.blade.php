@@ -1,4 +1,4 @@
-@extends('layouts.main', ['activePage' => 'posts', 'titlePage' => 'Nuevo Post'])
+@extends('layouts.main', ['activePage' => 'posts', 'titlePage' => 'Nuevo Cuento'])
 
 @section('content')
 <div class="content">
@@ -10,8 +10,8 @@
           <div class="card ">
             <!--Header-->
             <div class="card-header card-header-primary">
-              <h4 class="card-title">Post</h4>
-              <p class="card-category">Resgistra a tu mascota extraviada</p>
+              <h4 class="card-title">Cuento</h4>
+              <p class="card-category">Resgistra un nuevo cuento</p>
             </div>
             <!--End header-->
             <!--Body-->
@@ -20,7 +20,7 @@
               <div class="row">
                 <label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control" name="nombre" planombreceholder="Ingrese el nombre de la mascota"
+                  <input type="text" class="form-control" name="nombre" planombreceholder="Ingrese el nombre del video"
                     autocomplete="off" autofocus>
                     <!--Validaciones-->
                     @if($errors->has('nombre'))
@@ -33,7 +33,7 @@
               <div class="row">
                 <label for="genero" class="col-sm-2 col-form-label">Genero</label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control" name="genero" placeholder="Ingrese el nombre de la mascota"
+                  <input type="text" class="form-control" name="genero" placeholder="Ingrese el genero del cuento"
                     autocomplete="off" autofocus>
                     <!--Validaciones-->
                     @if($errors->has('genero'))
@@ -46,7 +46,7 @@
               <div class="row">
                 <label for="paginas" class="col-sm-2 col-form-label">Paginas</label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control" name="paginas" placeholder="Ingrese el nombre de la mascota"
+                  <input type="text" class="form-control" name="paginas" placeholder="Ingrese la cantidad de paginas"
                     autocomplete="off" autofocus>
                     <!--Validaciones-->
                     @if($errors->has('paginas'))
@@ -59,7 +59,7 @@
               <div class="row">
                 <label for="autor" class="col-sm-2 col-form-label">Autor</label>
                 <div class="col-sm-7">
-                  <input type="text" class="form-control" name="autor" placeholder="Ingrese el nombre de la mascota"
+                  <input type="text" class="form-control" name="autor" placeholder="Ingrese el nombre del autor"
                     autocomplete="off" autofocus>
                     <!--Validaciones-->
                     @if($errors->has('autor'))
